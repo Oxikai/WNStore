@@ -112,6 +112,16 @@ display: block;
 margin: auto;
 }
 
+#cart {
+    display: sticky;
+    padding: 0px;
+    margin: 0px;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0px;
+    left: 100%;
+}
+
 html {
     padding: 0px;
 }
