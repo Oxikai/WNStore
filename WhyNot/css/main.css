@@ -1,0 +1,138 @@
+.centerText {
+    text-align: center;
+}
+
+.secTitle {
+    text-decoration: none;
+    padding-bottom: 10px;
+    width: 90%;
+    margin: auto;
+    border-bottom: black 5px solid;
+}
+
+.bigImg {
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+}
+
+#menuButton {
+    display: sticky;
+    padding: 0px;
+    margin: 0px;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 10px;
+    left: 10px;
+}
+
+#menu {
+    max-width: 200px;
+    height: 500px;
+    background-color: rgba(230, 230, 230, 0.8);
+    position: sticky;
+    top: 100px;
+    transition: height 0.2s
+}
+
+#menu ul {
+    list-style-type: none;
+    display: none;
+}
+
+#menu a {
+    text-decoration: none;
+    color: black;
+    font-size: 20pt;
+}
+
+#items {
+    display: flex;
+}
+
+.item {
+    background-color: rgba(255, 255, 255, 0);
+    border-radius: 10%;
+    text-align: center;
+    padding: 20px;
+    margin: 5px 20px;
+    width: 350px;
+    height: 400px;
+    font-family: 'Oswald', sans-serif;
+    transition: background-color 0.2s;
+}
+
+.item:hover {
+    background-color: rgba(230, 230, 230, 0.8);
+}
+
+.item img {
+    width: 250px;
+    height: 250px;
+}
+
+.item h3 {
+    margin: 0px;
+    padding: 0px;
+}
+
+.item p {
+    margin: 0px 10px;
+    margin-top: 70px;
+    padding: 0px;
+}
+
+.offLoad {
+    text-decoration: none;
+    width: 90%;
+    font-size: 20pt;
+    margin: auto;
+}
+
+#amounts {
+    display: flex;
+    justify-content: center;
+    padding: 0px;
+    margin: 0px auto;
+    text-align: center;
+}
+
+.change {
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.change:hover {
+    background-color: rgba(230, 230, 230, 0.8);
+}
+
+#shell button {
+display: block;
+margin: auto;
+}
+
+html {
+    padding: 0px;
+}
+
+body {
+    margin: 0px;
+}
+
+h1 {
+    color: black;
+    font-family: 'Lobster', sans-serif;
+    font-size: 85pt;
+}
+
+h2 {
+    color: black;
+    font-family: 'Playfair Display', sans-serif;
+    font-size: 50pt;
+}
+
+p {
+    font-size: 20pt;
+    padding: 0px 40px;
+}

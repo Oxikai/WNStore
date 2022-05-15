@@ -1,0 +1,163 @@
+.centerText {
+    text-align: center;
+}
+
+.secTitle {
+    text-decoration: none;
+    padding-bottom: 10px;
+    width: 90%;
+    margin: auto;
+    border-bottom: black 5px solid;
+}
+
+.bigImg {
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+}
+
+.hide {
+    display: none;
+}
+
+#menuButton {
+    display: sticky;
+    padding: 0px;
+    margin: 0px;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 10px;
+    left: 10px;
+}
+
+#menu {
+    max-width: 200px;
+    height: 500px;
+    background-color: rgba(230, 230, 230, 0.8);
+    position: sticky;
+    top: 100px;
+    transition: height 0.2s
+}
+
+#menu ul {
+    list-style-type: none;
+    display: none;
+}
+
+#menu a {
+    text-decoration: none;
+    color: black;
+    font-size: 20pt;
+}
+
+#scrollL {
+    position: absolute;
+    left: 450px;
+    top: 800px;
+    background-color: rgba(230, 230, 230, 0);
+    border-radius: 50%;
+    transition: all 0.5s;
+}
+
+#scrollR {
+    position: absolute;
+    right: 450px;
+    top: 800px;
+    border-radius: 50%;
+    background-color: rgba(230, 230, 230, 0);
+    transition: all 0.5s;
+}
+
+#scrollR:hover, #scrollL:hover {
+    background-color: rgba(230, 230, 230, 0.8);
+}
+
+.addButton {
+    display: block;
+    position: relative;
+    bottom: 100px;
+    left: 1030px;
+    border-radius: 50px;
+    border: 5px rgb(255, 136, 0) solid;
+    background-color: white;
+    text-align: center;
+    width: 150px;
+    height: 50px;
+    cursor: pointer;
+    transition: background-color 0.5s, border-color 0.5s, color 0.5s;
+}
+
+.addButton:hover {
+    background-color: rgb(255, 136, 0);
+    border-color: rgb(209, 209, 209);
+    color: white
+}
+
+#amounts {
+    display: flex;
+    justify-content: center;
+    padding: 0px;
+    margin: 0px auto;
+    text-align: center;
+}
+
+.change {
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.change:hover {
+    background-color: rgba(230, 230, 230, 0.8);
+}
+
+#cart {
+    display: sticky;
+    padding: 0px;
+    margin: 0px;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0px;
+    left: 100%;
+}
+
+html {
+    padding: 0px;
+}
+
+body {
+    margin: 0px;
+}
+
+h1 {
+    color: black;
+    font-family: 'Lobster', sans-serif;
+    font-size: 85pt;
+}
+
+h2 {
+    color: black;
+    font-family: 'Playfair Display', sans-serif;
+    font-size: 50pt;
+}
+
+p {
+    font-size: 20pt;
+    font-family: 'Oswald', sans-serif;
+    padding: 0px 40px;
+}
+
+img {
+    display: block;
+    margin: 10px auto;
+}
+
+ul {
+    max-width: 650px;
+    padding-left: 600px;
+    font-size: 20pt;
+}
+
+li {
+    padding: 10px 0px;
+}
