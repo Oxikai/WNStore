@@ -10,17 +10,20 @@
         <script src="../scripts/StoreScript.js" defer></script>
     </head>
     <body>
-        <img id="menuButton" src="../media/menuIcon.png" width="50px" onclick="toggleMenu()">
+        <div id="floatBar">
+            <img id="menuButton" src="../media/menuIcon.png" onclick="toggleMenu()">
+            <img id="cart" src="../media/cartIcon.png" onclick="GoCart()">
+            <div id="menu" style="height: 1px;">
+                <ul id="nav">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="StoreHome.html">Store</a></li>
+                </ul>
+            </div>
+        </div>
+
         <a style="text-decoration: none;" href="index.html"><h1 class="offLoad">Why Not?</h1></a>
         <h2 class="centerText secTitle">Your Cart</h2>
-        <h3 id="total" style="text-align: right; font-size: 20pt; padding-right: 10px;">Your Cart Is Emtpy</h3>
-        <div id="menu" style="height: 1px;">
-            <ul id="nav">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="StoreHome.html">Store</a></li>
-                <li><a href="cart.html">Cart</a></li>
-            </ul>
-        </div>
+        <h3 id="total" style="text-align: right; padding-right: 10px;">Your Cart Is Emtpy</h3>
 
         <!--
             <div class="item" onclick="Redirect('ITEM_NUMBER_HERE')">
