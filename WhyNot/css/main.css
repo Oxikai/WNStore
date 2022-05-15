@@ -32,6 +32,7 @@
     background-color: rgba(230, 230, 230, 0.8);
     position: sticky;
     top: 100px;
+    cursor: pointer;
     transition: height 0.2s
 }
 
@@ -120,6 +121,7 @@ margin: auto;
     position: sticky;
     top: 0px;
     left: 100%;
+    cursor: pointer;
 }
 
 html {
