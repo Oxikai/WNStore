@@ -5,6 +5,8 @@ var counter = 0;
 var quantity = 1;
 var maxQuantity = 5;
 
+var add;
+
 for(var x = 0; x < container.children.length; x++) {
     images[x] = container.children[x].src;
 }
@@ -31,11 +33,15 @@ function GoCart() {
 }
 
 function AddToCart(name, id, price, img) {
+    add = event.target;
+    add.innerHTML = "Added to Cart ✔";
+    add.style.backgroundColor = "lime";
+    add.style.borderColor = "white";
+    add.style.width = "200px";
     var cartArray = `${name}*${id}*${price * quantity}*${img}*${quantity}`;
     if(localStorage.getItem("cart") == null) {
         localStorage.setItem("cart", `${cartArray}`);
-    }
-    else {
+    } else {
         var temp = localStorage.getItem("cart").split(",");
         var BREAK = false;
         var y = [];
@@ -56,6 +62,7 @@ function AddToCart(name, id, price, img) {
             localStorage.setItem("cart", `${temp.join(",")}`);
         }
     }
+    setTimeout("message()", 2000);
 }
 
 function updateQuantity(symbol) {
@@ -72,6 +79,13 @@ function updateQuantity(symbol) {
         }
         document.getElementById("quantityTxt").innerHTML = quantity;
     }
+}
+
+function message() {
+    add.innerHTML = "Add to Cart";
+    add.style.backgroundColor = "white";
+    add.style = borderColor = "rgb(255, 136, 0)";
+    add.style.width = "150px";
 }
 
 //setInterval("scroll()", 10000);

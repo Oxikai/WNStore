@@ -58,12 +58,12 @@ function loadCart() {
             plus.setAttribute("class", "change");
             plus.appendChild(plusTxt);
             Amt.appendChild(plus);
-            const button = document.createElement("button");
+            /*const button = document.createElement("button");
             button.setAttribute("onclick", "deleteItem()");
             const buttonTxt = document.createTextNode("Delete Item");
-            button.appendChild(buttonTxt);
+            button.appendChild(buttonTxt);*/
             CONTAINER.appendChild(outerContainer);
-            outerContainer.appendChild(button);
+            //outerContainer.appendChild(button);
         }
         if(total > 0) {
             document.getElementById("total").innerHTML = `Total: $${total}`;
